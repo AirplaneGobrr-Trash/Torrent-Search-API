@@ -36,4 +36,5 @@ async function magnet_dl(query, page = '1') {
     return ALLTORRENT;
 }
 
+magnet_dl.disabled = true
 module.exports = magnet_dl

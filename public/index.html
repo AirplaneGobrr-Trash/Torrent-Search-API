@@ -8,219 +8,219 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
     <style>
-:root {
-    --primary-color: #007bff;
-    --secondary-color: #0056b3;
-    --background-color: #f4f4f4;
-    --card-background: #fff;
-    --text-color: #333;
-    --text-secondary-color: #666;
-    --border-color: #ccc;
-    --border-radius: 5px;
-    --box-shadow-light: rgba(0, 0, 0, 0.1);
-    --box-shadow-hover: rgba(0, 0, 0, 0.2);
-    --spinner-color: #007bff;
-    --spinner-size: 50px;
-    --font-family: 'Poppins', sans-serif;
-    --font-size-base: 0.9rem;
-    --font-size-small: 0.85rem;
-    --header-font-size: 1.8rem;
-    --header-font-size-mobile: 1.5rem;
-    --max-card-height: 400px;
-}
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #0056b3;
+            --background-color: #f4f4f4;
+            --card-background: #fff;
+            --text-color: #333;
+            --text-secondary-color: #666;
+            --border-color: #ccc;
+            --border-radius: 5px;
+            --box-shadow-light: rgba(0, 0, 0, 0.1);
+            --box-shadow-hover: rgba(0, 0, 0, 0.2);
+            --spinner-color: #007bff;
+            --spinner-size: 50px;
+            --font-family: 'Poppins', sans-serif;
+            --font-size-base: 0.9rem;
+            --font-size-small: 0.85rem;
+            --header-font-size: 1.8rem;
+            --header-font-size-mobile: 1.5rem;
+            --max-card-height: 400px;
+        }
 
-body {
-    font-family: var(--font-family);
-    background-color: var(--background-color);
-    color: var(--text-color);
-    margin: 0;
-    padding: 0;
-}
+        body {
+            font-family: var(--font-family);
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
 
-header {
-    background-color: var(--text-color);
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 2px 5px var(--box-shadow-light);
-}
+        header {
+            background-color: var(--text-color);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px var(--box-shadow-light);
+        }
 
-header h1 {
-    font-size: var(--header-font-size);
-    margin: 0;
-}
+        header h1 {
+            font-size: var(--header-font-size);
+            margin: 0;
+        }
 
-.search-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 5px var(--box-shadow-light);
-}
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px var(--box-shadow-light);
+        }
 
-.search-container input,
-.search-container select {
-    padding: 10px;
-    font-size: var(--font-size-base);
-    border-radius: var(--border-radius);
-    border: 1px solid var(--border-color);
-    margin-right: 10px;
-    flex: 1;
-}
+        .search-container input,
+        .search-container select {
+            padding: 10px;
+            font-size: var(--font-size-base);
+            border-radius: var(--border-radius);
+            border: 1px solid var(--border-color);
+            margin-right: 10px;
+            flex: 1;
+        }
 
-.search-container button {
-    background-color: var(--primary-color);
-    padding: 10px 15px;
-    color: white;
-    font-size: var(--font-size-base);
-    border: none;
-    border-radius: var(--border-radius);
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-}
+        .search-container button {
+            background-color: var(--primary-color);
+            padding: 10px 15px;
+            color: white;
+            font-size: var(--font-size-base);
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
 
-.search-container button:hover {
-    background-color: var(--secondary-color);
-    transform: scale(1.05);
-}
+        .search-container button:hover {
+            background-color: var(--secondary-color);
+            transform: scale(1.05);
+        }
 
-.movie-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 15px;
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-}
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 15px;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
 
-.movie-card {
-    background-color: var(--card-background);
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px var(--box-shadow-light);
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.3s, box-shadow 0.3s;
-    height: 100%;
-    max-height: var(--max-card-height);
-    position: relative;
-}
+        .movie-card {
+            background-color: var(--card-background);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px var(--box-shadow-light);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+            position: relative;
+        }
 
-.movie-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 16px var(--box-shadow-hover);
-}
+        .movie-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 16px var(--box-shadow-hover);
+        }
 
-.movie-card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    transition: opacity 0.3s;
-}
+        .movie-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            transition: opacity 0.3s;
+        }
 
-.movie-card img:hover {
-    opacity: 0.8;
-}
+        .movie-card img:hover {
+            opacity: 0.8;
+        }
 
-.movie-details {
-    padding: 10px;
-    text-align: left;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-}
+        .movie-details {
+            padding: 10px;
+            text-align: left;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+        }
 
-.movie-details h5 {
-    font-size: 1rem;
-    margin: 0;
-    color: var(--primary-color);
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
+        .movie-details h5 {
+            font-size: 1rem;
+            margin: 0;
+            color: var(--primary-color);
+        }
 
-.movie-details p {
-    font-size: var(--font-size-small);
-    color: var(--text-secondary-color);
-    margin: 5px 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
+        .movie-details p {
+            font-size: var(--font-size-small);
+            color: var(--text-secondary-color);
+            margin: 5px 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
 
-.button-container {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-top: auto;
-    padding: 10px;
-}
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            margin-top: auto;
+            padding: 10px;
+        }
 
-.btn-custom {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 8px;
-    text-decoration: none;
-    border-radius: var(--border-radius);
-    display: block;
-    transition: background-color 0.3s, transform 0.2s;
-    font-size: var(--font-size-small);
-    text-align: center;
-}
+        .btn-custom {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 8px;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            display: block;
+            transition: background-color 0.3s, transform 0.2s;
+            font-size: var(--font-size-small);
+            text-align: center;
+        }
 
-.btn-custom:hover {
-    background-color: var(--secondary-color);
-    transform: scale(1.05);
-}
+        .btn-custom:hover {
+            background-color: var(--secondary-color);
+            transform: scale(1.05);
+        }
 
-.spinner-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.8);
-    z-index: 1000;
-}
+        .spinner-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            z-index: 1000;
+        }
 
-.spinner {
-    border: 4px solid #f3f3f3;
-    border-top: 4px solid var(--spinner-color);
-    border-radius: 50%;
-    width: var(--spinner-size);
-    height: var(--spinner-size);
-    animation: spin 1s linear infinite;
-}
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid var(--spinner-color);
+            border-radius: 50%;
+            width: var(--spinner-size);
+            height: var(--spinner-size);
+            animation: spin 1s linear infinite;
+        }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
 
-@media (max-width: 768px) {
-    header h1 {
-        font-size: var(--header-font-size-mobile);
-    }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
 
-    .search-container {
-        flex-direction: column;
-        padding: 15px;
-    }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: var(--header-font-size-mobile);
+            }
 
-    .search-container input,
-    .search-container select,
-    .search-container button {
-        margin-bottom: 10px;
-        width: 100%;
-    }
-}
+            .search-container {
+                flex-direction: column;
+                padding: 15px;
+            }
 
+            .search-container input,
+            .search-container select,
+            .search-container button {
+                margin-bottom: 10px;
+                width: 100%;
+            }
+        }
     </style>
 </head>
 
@@ -233,9 +233,12 @@ header h1 {
     <div class="search-container">
         <input type="text" id="query" class="form-control" placeholder="Enter torrent name...">
         <select id="website" class="form-select">
+            <option value="all">ALL</option>
+            <!--
             <option value="1337x">1337x</option>
             <option value="yts">YTS</option>
             <option value="torlock">Torlock</option>
+            -->
         </select>
         <input type="number" id="page" class="form-control" placeholder="Page (optional)" min="1">
         <button onclick="searchTorrents()">Search</button>
@@ -252,6 +255,26 @@ header h1 {
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
+        fetch("/api/torrents").then(async (v) => {
+            const torrents = await v.json()
+            const website = $('#website')
+            for (let torrent of torrents) {
+                let torrentElm = document.createElement("option")
+                torrentElm.value = torrent
+                torrentElm.innerText = torrent
+                website.append(torrentElm)
+            }
+        })
+
+        function sort(list) {
+            return list.sort((a, b) => {
+                const seedersA = a.Seeders ?? 0; // Use 0 if Seeders is undefined or null
+                const seedersB = b.Seeders ?? 0;
+                return seedersB - seedersA; // Sort in descending order
+            });
+        }
+
+
         async function searchTorrents() {
             const query = $('#query').val();
             const website = $('#website').val();
@@ -262,21 +285,57 @@ header h1 {
             // Show the spinner
             spinnerContainer.show();
 
-            let apiUrl = `https://itorrentsearch.vercel.app/api/${website}/${query}`;
+            let apiUrl = `/api/${website}/${query}`;
             if (page) {
                 apiUrl += `/${page}`;
             }
 
             try {
                 const response = await fetch(apiUrl);
-                const data = await response.json();
+                const data = sort(await response.json());
 
                 if (!data || data.length === 0) {
                     resultsDiv.html('<div class="text-center col-12">No results found.</div>');
                     return;
                 }
 
+                console.log(data)
+
                 resultsDiv.empty();
+                let things = {}
+
+                let ignored = ["Torrent", "Magnet", "Url", "Poster", "Name", "Files"]
+
+                for (let torrent of data) {
+                    console.log(torrent)
+                    if (!torrent?.Files && !torrent?.Magnet) continue // Ignore.
+                    if (!torrent?.Name) continue // Ignore.
+                    let torrentElm = document.createElement("div")
+                    torrentElm.classList.add("movie-card")
+                    let posterHTML = ""
+                    if (torrent?.Poster) {
+                        posterHTML = `<img src="${torrent.Poster}" alt="${torrent.Name}">`
+                    }
+                    let html = `${posterHTML}<div class="movie-details"><h5>${torrent.Name}</h5>`
+                    for (let key in torrent) {
+                        if (ignored.includes(key)) continue
+                        html += `<p><strong>${key}:</strong> ${torrent[key]}</p>`
+                    }
+
+                    if (torrent?.Files) {
+                        for (let file of torrent.Files) {
+                            html += `<div class="button-container"><a href="${file.Magnet}" class="btn-custom">${file.Quality}</a></div></div></div>`
+                        }
+                    } else {
+                        html += `<div class="button-container"><a href="${torrent.Magnet}" class="btn-custom">Magnet</a></div></div>`
+                    }
+                    torrentElm.innerHTML = html
+                    console.log(html)
+                    resultsDiv.append(torrentElm)
+                }
+                console.log(things)
+
+                return
 
                 if (website === '1337x') {
                     data.forEach(torrent => {
@@ -306,9 +365,9 @@ header h1 {
                                     <p><strong>Rating:</strong> ${movie.Rating || 'N/A'}</p>
                                     <div class="button-container">
                                         <a href="${movie.Url}" class="btn-custom">More Details</a>
-                                        ${movie.Files.map(file => 
-                                            `<a href="${file.Magnet}" class="btn-custom">${file.Quality}</a>`
-                                        ).join('')}
+                                        ${movie.Files.map(file =>
+                                `<a href="${file.Magnet}" class="btn-custom">${file.Quality}</a>`
+                            ).join('')}
                                     </div>
                                 </div>
                             </div>`
@@ -333,6 +392,7 @@ header h1 {
                     });
                 }
             } catch (error) {
+                console.log(error)
                 resultsDiv.html('<div class="text-center text-danger col-12">Failed to load results.</div>');
             } finally {
                 spinnerContainer.hide();

@@ -43,7 +43,7 @@ async function torrent1337x(query = '', page = '1') {
                 data.Poster = poster;
             }
             else {
-                data.Poster = 'https:' + poster;
+                data.Poster = 'https://1337xx.to' + poster;
             }
         } else {
             data.Poster = ''

@@ -9,6 +9,7 @@ function getTorrents() {
     for (let torrentFile of torrentFiles) {
         let torrent = require(`./${torrentFile}`)
 
+        if (torrent?.disabled) continue
         let torrentName = (torrent?.customName ?? torrentFile.split(".").shift()).toLowerCase(); // Use the set name or use the file name
         torrents[torrentName] = torrent
     }
